@@ -14,7 +14,7 @@ class SearchBar extends Component{
     render() {
         return(
             <div>
-                {/* <input placeholder="search here .." onChange={ this.onInputChange } /> */}
+                <input placeholder="search here .." onChange={ this.onInputChange } />
             </div>
         )
     }
