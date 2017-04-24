@@ -13,7 +13,7 @@ const VideoListItem = ({video}) => {
 
                 <div className="media-body">
                     <div className="media-heading">
-                        {title}
+                        { title.length >= 60 ? title.substring(0,56) + ' ...' : title }
                     </div>
                 </div>
             </div>

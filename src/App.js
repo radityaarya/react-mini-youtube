@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
-
-import SearchBar from './components/SearchBar';
-import VideoList from './components/VideoList';
-
 import config from '../config/config';
 const API_KEY = config.YOUTUBE_API_KEY;
+
+/* components import */
+import {
+    SearchBar,
+    VideoList
+} from './components/';
+
 
 class App extends Component {
     constructor(props){
