@@ -13,8 +13,12 @@ class SearchBar extends Component{
 
     render() {
         return(
-            <div>
-                <input placeholder="search here .." onChange={ this.onInputChange } />
+            // <div className="search-bar">
+            //     <input placeholder="search here .." onChange={ this.onInputChange } />
+            // </div>
+
+            <div className="input-group search-bar col-md-10 col-md-offset-10">
+                <input onChange={ this.onInputChange } type="text" className="form-control" placeholder="Search for..." />
             </div>
         )
     }
