@@ -13,18 +13,18 @@ class SearchBar extends Component{
 
     render() {
         return(
-            // <div className="search-bar">
-            //     <input placeholder="search here .." onChange={ this.onInputChange } />
-            // </div>
-
             <div className="input-group search-bar col-md-10 col-md-offset-10">
-                <input onChange={ this.onInputChange } type="text" className="form-control" placeholder="Search for..." />
+                <input
+                    value={this.state.term}
+                    onChange={ event => this.onInputChange(event.target.value) }
+                    type="text" className="form-control" placeholder="Search for..." />
             </div>
         )
     }
 
-    onInputChange(event){
-        this.setState({term: event.target.value})
+    onInputChange(term){
+        this.setState({term})
+        this.props.onSearchVideo(term)
     }
 
 }
