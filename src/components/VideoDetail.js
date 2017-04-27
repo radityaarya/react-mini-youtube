@@ -6,6 +6,7 @@ const VideoDetail = ({video}) =>{
 
     const title = video.snippet.title;
     const description = video.snippet.description;
+    console.log(video.snippet);
 
     const videoId = video.id.videoId;
     const url = `https://youtube.com/embed/${videoId}`;
