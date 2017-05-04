@@ -8,7 +8,7 @@ body{
 }
 
 .search-bar input{
-    width: 75%;
+    width: 100%;
 }
 
 .video-item img{
@@ -24,7 +24,6 @@ body{
 }
 
 .list-group{
-    margin-top: 10px;
     margin-bottom: 60px;
 }
 

@@ -13,7 +13,7 @@ class SearchBar extends Component{
 
     render() {
         return(
-            <div className="input-group search-bar col-md-10 col-md-offset-10">
+            <div className="input-group search-bar col-md-10 center-block">
                 <input
                     value={this.state.term}
                     onChange={ event => this.onInputChange(event.target.value) }
